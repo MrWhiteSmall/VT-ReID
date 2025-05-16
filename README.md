@@ -1,0 +1,2 @@
+# VT-ReID
+基于HRVITON和SCNet构建的pipeline，梯度更新AttackModel，生成的Sample具有迷惑性，作为数据增强的一种手段提高ReID训练后的检测能力
