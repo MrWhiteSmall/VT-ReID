@@ -1,0 +1,20 @@
+Replace _C.DATA.ROOT and _C.OUTPUT in configs/default_img.pywith your own data root path and output path, respectively.
+默认读取的路径需要修改
+/public/home/yangzhe/miniconda3/envs/ccreid/lib/python3.10/site-packages/torch/hub.py
+这个文件修改
+load_state_dict_from_url函数，将其参数model_dir由None改为自己设定目录
+
+
+Dataset/
+├── LTCC_ReID/
+│   ├── ...
+│   └── processed       √
+├── PRCC/               重新解压一下
+|   ├── rgb / processed  √
+│   └── sketch
+├── Vc-Clothes/
+|   ├── ...
+|   └── processed
+└── DeepChange/
+    ├── ...
+    └── processed
